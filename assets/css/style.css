@@ -1,0 +1,72 @@
+:root {
+  --border-size: 4px;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+body,
+button,
+input {
+  font-size: 30px;
+}
+
+form {
+  margin: 10px;
+  border: var(--border-size) solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  width: 70%;
+  margin: 15px;
+  padding: 10px;
+  border: var(--border-size) solid blue;
+}
+
+form > :nth-child(-n + 2) {
+  justify-content: space-between;
+  border-color: green;
+}
+
+form > :nth-child(-n + 2) > input {
+  height: 40px;
+}
+
+label {
+  flex: 1;
+  text-align: center;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-container > div {
+  border: var(--border-size) solid blue;
+  text-align: center;
+}
+
+form > :last-child {
+  border: none;
+}
+
+.input-text-number {
+  width: 70%;
+}

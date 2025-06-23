@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./src/index.js"></script>
+    <title>28 JS 18 Get weather</title>
+  </head>
+  <body>
+    <main>
+      <h1>Weather map</h1>
+      <form>
+        <div class="container">
+          <label for="city-name">City name</label>
+          <input
+            class="input-text-number"
+            type="text"
+            name="city-name"
+            id="city-name"
+          />
+        </div>
+        <div class="container">
+          <label for="city-id">City ID</label>
+          <input
+            class="input-text-number"
+            type="number"
+            name="city-id"
+            id="city-id"
+            disabled
+          />
+        </div>
+        <div class="container">
+          <div class="column-container">
+            <label for="city-switch-name">City name</label>
+            <input
+              type="radio"
+              name="city-switch"
+              id="city-switch-name"
+              value="name"
+              checked
+            />
+          </div>
+          <div class="column-container">
+            <label for="city-switch-id">City ID</label>
+            <input
+              type="radio"
+              name="city-switch"
+              id="city-switch-id"
+              value="id"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <div class="column-container">
+            <h3>Temperature</h3>
+            <div id="temperature"></div>
+          </div>
+          <div class="column-container">
+            <h3>Wind speed</h3>
+            <div id="wind-speed"></div>
+          </div>
+          <div class="column-container">
+            <h3>Humidity</h3>
+            <div id="humidity"></div>
+          </div>
+        </div>
+        <div class="container">
+          <button type="submit">Weather</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
