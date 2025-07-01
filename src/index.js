@@ -36,7 +36,9 @@ const submitButton = document.querySelector('button[type="submit"]');
 
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
-  const city = document.querySelector('input[type="text"]:not([disabled])');
+  const city = document.querySelector(
+    'input[type="text"]:not([disabled]), input[type="number"]:not([disabled])'
+  );
   const getWeather = `https://api.openweathermap.org/data/2.5/weather?${
     city.name === "city-name" ? "q" : "id"
   }=${city.value}&units=metric&appid=${apiKey}`;
